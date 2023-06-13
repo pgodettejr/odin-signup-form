@@ -12,10 +12,11 @@
 
   <h1>This is not a real online service! You know you need something like this in your life to 
     help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
-  <h1>You <em>know</em> you want to.</h1> <!-- Research the other HTML method of formatting this -->
-  <!-- Probably won't be able to use double h1 tags -->
+  <h1>You <em>know</em> you want to.</h1> 
+  <!-- Research other HTML method of formatting the double h1 tags. Maybe could use <p> & style them -->
 
   <form action="" method="get" class="signup-form">
+  <!-- Labels need to appear on top of the text boxes, not next to them -->
     <section>
       <div class="form-row">
         <label for="first-name">First Name</label>
@@ -32,13 +33,14 @@
         <input type="email" name="email" id="email" placeholder="joe@example.com" />
       </div>
 
-<!-- Research either placeholder or pattern for phone number input tag -->
       <div class="form-row">
         <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" min="0" max="9" pattern="" />
+        <input type="tel" name="phone" id="phone" min="0" max="9" 
+               placeholder="555-555-5555"
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
       </div>
 
-<!-- Double check password formatting for forms -->
+<!-- Will need to change/add something for the "Passwords do not match" message -->
       <div class="form-row">
         <label for="pwd">Password</label>
         <input type="password" name="pwd" id="pwd" required />
