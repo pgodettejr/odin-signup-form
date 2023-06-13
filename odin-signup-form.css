@@ -13,4 +13,13 @@ body {
     flex-direction: row;
 }
 
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #596D48;
+    border: none;
+    border-radius: 3px;
+    padding: 20px 80px;
+}
 /* Viewport height on the body or to match the height of the picture */
