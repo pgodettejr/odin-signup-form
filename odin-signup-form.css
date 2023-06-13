@@ -12,3 +12,5 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+/* Viewport height on the body or to match the height of the picture */
