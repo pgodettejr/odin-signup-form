@@ -5,48 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
   <img src="halie-west-unsplash.jpg" alt="halie-west-jungle" />
   <!-- Find codebase for black border with logo and text in a previous TOP lesson & put it here -->
-  
+
   <h1>This is not a real online service! You know you need something like this in your life to 
     help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
   <h1>You <em>know</em> you want to.</h1> <!-- Research the other HTML method of formatting this -->
   <!-- Probably won't be able to use double h1 tags -->
 
   <form action="" method="get" class="signup-form">
-    <div class="form-row">
-      <label for="first-name">First Name</label>
-      <input type="text" name="first-name" id="first-name" />
-    </div>
+    <section>
+      <div class="form-row">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" />
+      </div>
 
-    <div class="form-row">
-      <label for="last-name">Last Name</label>
-      <input type="text" name="last-name" id="last-name" />
-    </div>
+      <div class="form-row">
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" />
+      </div>
 
-    <div class="form-row">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="joe@example.com" />
-    </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="joe@example.com" />
+      </div>
 
 <!-- Research either placeholder or pattern for phone number input tag -->
-    <div class="form-row">
-      <label for="phone">Phone Number</label>
-      <input type="tel" name="phone" id="phone" min="0" max="9" pattern="" />
-    </div>
+      <div class="form-row">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" min="0" max="9" pattern="" />
+      </div>
 
 <!-- Double check password formatting for forms -->
-    <div class="form-row">
-      <label for="pwd">Password</label>
-      <input type="password" name="pwd" id="pwd" />
-    </div>
+      <div class="form-row">
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" id="pwd" />
+      </div>
+
+      <div class="form-row">
+        <label for="confirm-pwd">Password</label>
+        <input type="password" name="confirm-pwd" id="confirm-pwd" />
+      </div>
+    </section>
 
     <div class="form-row">
-      <label for="confirm-pwd">Password</label>
-      <input type="password" name="confirm-pwd" id="confirm-pwd" />
+      <button>Create Account</button>
     </div>
   </form>
-  <!-- Add the button here -->
 </body>
 </html>
