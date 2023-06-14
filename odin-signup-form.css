@@ -15,6 +15,15 @@ body {
     height: 100vh; /* Might need to change this? */
 }
 
+/* We can target each part of the form with align-self */
+form {
+    display: flex;
+    flex-direction: column; /* Need more than this */
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 0 -10px; --> Not sure if this needs to be here or in body. Also, use gap instead for gap between the edges of the form */
+}
+
 .form-row input:invalid {
     border: 1px solid #D55C5F;
     color: #D55C5F;
