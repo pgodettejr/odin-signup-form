@@ -15,6 +15,13 @@ body {
     height: 100vh; /* Might need to change this? */
 }
 
+.main {
+    display: flex;
+    flex-direction: column; /* Need more than this */
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* We can target each part of the form with align-self */
 form {
     display: flex;
