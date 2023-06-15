@@ -11,7 +11,7 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     height: 100vh; /* Might need to change this? */
 }
 
@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column; /* Need more than this */
     justify-content: space-around;
-    align-items: center;
+    /* margin-left: 1rem; --> This moves everything correctly but leaves the gray bg color to the left of the form */
 }
 
 /* We can target each part of the form with align-self */
@@ -27,9 +27,28 @@ form {
     display: flex;
     flex-direction: column; /* Need more than this */
     justify-content: space-around;
-    align-items: center;
-    /* margin: 0 -10px; --> Not sure if this needs to be here or in body. Also, use gap instead for gap between the edges of the form */
+    gap: 2rem;
 }
+
+section {
+    background-color: #FFFFFF;
+}
+
+h1 {
+  margin: 1rem;
+  padding: 16px;
+}
+
+/* This does nothing apparently
+h1 .form-row {
+    margin-left: 1rem;
+} */
+
+/* Might replace with h1 but would need to restyle the other p's inside the form & at the bottom
+p {
+  font-size: 48px;
+  font-weight: 800;
+} */
 
 .form-row input:invalid {
     border: 1px solid #D55C5F;
@@ -45,4 +64,9 @@ form {
     border: none;
     border-radius: 3px;
     padding: 20px 80px;
+    box-shadow: #5D6063;
+}
+
+a {
+    color: #596D48;
 }
