@@ -58,11 +58,14 @@ section > div {
     gap: 8px;
 }
 
-/* Might replace with h1 but would need to restyle the other p's inside the form & at the bottom
-p {
-  font-size: 48px;
-  font-weight: 800;
-} */
+/* This gets the labels above the input boxes but widens the entire height of the page (beyond 100%). See HTML form section for more. */
+label, input {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    height: 25px;
+}
 
 .form-row input {
     border: 1px solid #E5E7EB;
