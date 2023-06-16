@@ -36,11 +36,30 @@ form {
 
 section {
     background-color: #FFFFFF;
+    margin-top: -100px;
+    padding: 40px 30px 40px;
+    box-shadow: 0 5px 3px #c7c9cc;
 }
 
 h1 {
-  margin: 2rem;
-  padding: 16px;
+    margin: 2rem;
+    padding: 0;
+}
+
+section > p {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+section > div {
+
+}
+.form-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* Might replace with h1 but would need to restyle the other p's inside the form & at the bottom
@@ -61,10 +80,10 @@ p {
     color: #FFFFFF;
     background-color: #596D48;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 20px 80px;
     margin: 2rem;
-    box-shadow: #5D6063;
+    box-shadow: 5px 4px 4px #c7c9cc;
 }
 
 form > p {
