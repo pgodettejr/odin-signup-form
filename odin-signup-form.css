@@ -22,6 +22,10 @@ body {
     /* margin-left: 1rem; --> This moves everything correctly but leaves the gray bg color to the left of the form */
 }
 
+.intro {
+    color: black;
+}
+
 /* We can target each part of the form with align-self */
 form {
     display: flex;
@@ -35,14 +39,9 @@ section {
 }
 
 h1 {
-  margin: 1rem;
+  margin: 2rem;
   padding: 16px;
 }
-
-/* This does nothing apparently
-h1 .form-row {
-    margin-left: 1rem;
-} */
 
 /* Might replace with h1 but would need to restyle the other p's inside the form & at the bottom
 p {
@@ -64,7 +63,15 @@ p {
     border: none;
     border-radius: 3px;
     padding: 20px 80px;
+    margin: 2rem;
     box-shadow: #5D6063;
+}
+
+form > p {
+    color: black;
+    margin: 2rem;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 a {
