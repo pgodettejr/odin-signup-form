@@ -36,7 +36,6 @@ form {
 
 section {
     background-color: #FFFFFF;
-    margin-top: -100px;
     padding: 40px 30px 40px;
     box-shadow: 0 5px 3px #c7c9cc;
 }
@@ -54,12 +53,9 @@ section > p {
 }
 
 section > div {
-
-}
-.form-row {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    padding: 30px 0 30px;
+    gap: 8px;
 }
 
 /* Might replace with h1 but would need to restyle the other p's inside the form & at the bottom
@@ -67,6 +63,16 @@ p {
   font-size: 48px;
   font-weight: 800;
 } */
+
+.form-row input {
+    border: 1px solid #E5E7EB;
+    box-shadow: none;
+}
+
+.form-row input:focus {
+    border: 1px solid blue;
+    box-shadow: 5px 4px 4px #c7c9cc;
+}
 
 .form-row input:invalid {
     border: 1px solid #D55C5F;
