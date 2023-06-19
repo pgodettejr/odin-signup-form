@@ -19,41 +19,50 @@
       <h1>You <em>know</em> you want to.</h1> 
     </div>
 
-  <!-- May need to group the labels & inputs into two separate divs or sections with a class & not just all in one -->
     <form action="" method="get" class="signup-form">
       <section>
         <p>Let's do this!</p>
-        <div class="form-row">
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name" required />
+        <div class="container-1">
+          <!-- Divide into 3 sections instead of 2: First + Last Name, Email + Phone, Pwd + Confirm -->
+          <div class="section-1">
+            <div class="form-row">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="joe@example.com" />
+            </div>
+
+            <!-- Will need to change/add something for the "Passwords do not match" message -->
+            <div class="form-row">
+              <label for="pwd">Password</label>
+              <input type="password" name="pwd" id="pwd" required />
+            </div>
+          </div>
         </div>
 
-        <div class="form-row">
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name" required />
-        </div>
+        <div class="container-2">
+          <div class="section-2">
+            <div class="form-row">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
 
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="joe@example.com" />
-        </div>
+            <div class="form-row">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" min="0" max="9" 
+                    placeholder="555-555-5555"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+            </div>
 
-        <div class="form-row">
-          <label for="phone">Phone Number</label>
-          <input type="tel" name="phone" id="phone" min="0" max="9" 
-                placeholder="555-555-5555"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-        </div>
-
-<!-- Will need to change/add something for the "Passwords do not match" message -->
-        <div class="form-row">
-          <label for="pwd">Password</label>
-          <input type="password" name="pwd" id="pwd" required />
-        </div>
-
-        <div class="form-row">
-          <label for="confirm-pwd">Confirm Password</label>
-          <input type="password" name="confirm-pwd" id="confirm-pwd" required />
+            <!-- Will need to change/add something for the "Passwords do not match" message -->
+            <div class="form-row">
+              <label for="confirm-pwd">Confirm Password</label>
+              <input type="password" name="confirm-pwd" id="confirm-pwd" required />
+            </div>
+          </div>
         </div>
       </section>
 
