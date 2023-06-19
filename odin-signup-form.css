@@ -58,13 +58,12 @@ section > div {
     gap: 8px;
 }
 
-/* This gets the labels above the input boxes but widens the entire height of the page (beyond 100%). See HTML form section for more. */
 label, input {
     display: block;
     padding: 0; /* POSSIBLY increase this if height is 0 */
     margin: 0;
     width: 30%;
-    height: 25px; /* POSSIBLY put this to 0 or auto if padding is 0 */
+    height: auto;
 }
 
 .form-row input {
