@@ -27,7 +27,7 @@ body {
     color: white;
     top: 14rem;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 10em;
     font-family: Norse-Bold;
 
     display: flex;
@@ -38,7 +38,11 @@ body {
 .odin-logo {
   flex: 1;
   max-width: 150px;
-  margin: 25px 70px 25px;
+  margin: 25px;
+}
+
+.odin-text {
+    align-self: center;
 }
 
 .main {
@@ -89,9 +93,16 @@ label, input {
     display: block;
     padding: 0;
     margin: 10px 0;
-    width: 120%;
+    width: 130%;
     height: auto;
 }
+
+/* Not the font that TOP used. Spacing throws "Confirm Password" to the left
+.form-row label {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+} */
 
 .form-row input {
     border: 1px solid #E5E7EB;
