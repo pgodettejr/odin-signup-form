@@ -11,15 +11,40 @@ body {
 
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     height: 100vh; /* Might need to change this? */
+}
+
+.container {
+    position: absolute;
+    width: 808px;
+}
+
+.odin-body {
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 14rem;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Norse-Bold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.odin-logo {
+  flex: 1;
+  max-width: 150px;
+  margin: 25px 70px 25px;
 }
 
 .main {
     display: flex;
-    flex-direction: column; /* Need more than this */
+    flex-direction: column;
     justify-content: space-around;
-    /* margin-left: 1rem; --> This moves everything correctly but leaves the gray bg color to the left of the form */
 }
 
 .intro {
@@ -28,7 +53,7 @@ body {
 
 form {
     display: flex;
-    flex-direction: column; /* Need more than this */
+    flex-direction: column;
     justify-content: space-around;
     gap: 2rem;
 }
@@ -82,7 +107,7 @@ label, input {
 
 .form-row input:invalid {
     border: 1px solid #D55C5F;
-    color: #D55C5F;
+    /* color: #D55C5F; */
     box-shadow: none;
 }
 
