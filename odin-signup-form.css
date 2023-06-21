@@ -111,14 +111,14 @@ label, input {
     padding: 5px;
 }
 
-.form-row input:focus {
-    border: 1px solid blue;
-    box-shadow: 5px 4px 4px #c7c9cc;
-}
-
 .form-row input:invalid {
     border: 1px solid #D55C5F;
     box-shadow: none;
+}
+
+.form-row input:focus {
+    border: 1px solid blue;
+    box-shadow: 5px 4px 4px #c7c9cc;
 }
 
 .form-row button {
