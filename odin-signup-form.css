@@ -11,7 +11,7 @@ body {
 
     display: flex;
     flex-direction: row;
-    height: 100vh; /* Might need to change this? */
+    height: 100vh;
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
     background: black;
     opacity: 0.6;
     color: white;
-    top: 14rem;
+    top: 12.5rem;
     text-align: center;
     font-size: 10em;
     font-family: Norse-Bold;
@@ -85,7 +85,7 @@ section > div {
     justify-content: space-between;
     max-width: 40%;
     margin: 0;
-    padding: 30px 0;
+    padding: 10px 0;
     gap: 1rem;
 }
 
@@ -118,7 +118,6 @@ label, input {
 
 .form-row input:invalid {
     border: 1px solid #D55C5F;
-    /* color: #D55C5F; */
     box-shadow: none;
 }
 
@@ -129,12 +128,11 @@ label, input {
     background-color: #596D48;
     border: none;
     border-radius: 5px;
-    padding: 20px 80px;
+    padding: 18px 60px;
     margin: 2rem;
     box-shadow: 5px 4px 4px #c7c9cc;
 }
 
-/* Choose between either this or "section > p" above? Do we need both? */
 form > p {
     color: black;
     margin: 2rem;
